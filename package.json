@@ -32,6 +32,10 @@
   },
   "dependencies": {
     "request": "^2.36.0",
-    "ws": "^0.4.31"
+    "ws": "^0.4.31",
+    "lodash.assign": "^2.4.1"
+  },
+  "devDependencies": {
+    "tape": "^2.13.2"
   }
 }
