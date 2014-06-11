@@ -1,10 +1,2 @@
-.pidfile.pid
+.DS_Store
 node_modules
-npm-debug.log
-sockjs.js
-sockjs.min.js
-.testling_env.sh
-testling.js
-build/
-tests/html/lib/alltestsbundle.js
-tests/html/lib/sockjs.js.map
