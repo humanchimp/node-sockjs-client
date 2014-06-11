@@ -1,7 +1,7 @@
 {
   "name": "node-sockjs-client",
   "description": "SockJS-client for node",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "lib/sockjs.js",
   "author": "Marek Majkowski",
   "bugs": {
