@@ -5,4 +5,5 @@ node_js:
   - "0.8"
   - "0.6"
 before_script:
-  - node ./test/lib/server.js
+  - node ./test/lib/server.js &
+  - sleep 2
