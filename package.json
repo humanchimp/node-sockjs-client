@@ -7,6 +7,9 @@
   "bugs": {
     "url": "https://github.com/sockjs/sockjs-client/issues"
   },
+  "scripts": {
+    "test": "tap ./test/*.js"
+  },
   "contributors": [
     {
       "name": "Bryce Kahle",
