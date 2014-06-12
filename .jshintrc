@@ -14,5 +14,7 @@
   "nonew": true,
   "plusplus": false,
   "quotmark": "single",
-  "unused": true
+  "unused": true,
+  "trailing": true,
+  "maxdepth": 2
 }
