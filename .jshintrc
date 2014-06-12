@@ -1,5 +1,17 @@
 {
   "node": true,
   "curly": true,
-  "strict": true
+  "strict": true,
+  "bitwise": false,
+  "camelcase": false,
+  "eqeqeq": true,
+  "undef": true,
+  "latedef": false,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "nonew": true,
+  "plusplus": false,
+  "quotmark": "single"
 }
