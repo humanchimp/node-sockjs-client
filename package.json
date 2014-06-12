@@ -25,7 +25,6 @@
     "client"
   ],
   "license": "MIT",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/humanchimp/node-sockjs-client.git"
