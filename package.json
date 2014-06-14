@@ -9,6 +9,8 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/tap ./test/*.js",
+    "cover": "istanbul cover --report none --print detail test/unit.js",
+    "travis-test": "istanbul cover test/unit.js",
     "sanitycheck": "sanitycheck"
   },
   "contributors": [
