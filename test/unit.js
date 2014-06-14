@@ -172,6 +172,6 @@ test('REventTarget', function (t) {
 test('safe json parse', function (t) {
     var jsonParse = require('../lib/safe-json-parse.js');
     t.plan(2);
-    t.deepEqual(jsonParse('invalid json'), null);
+    t.equal(jsonParse('invalid json'), null);
     t.deepEqual(jsonParse('{"valid":"json"}'), {"valid":"json"});
 });
