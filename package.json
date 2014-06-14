@@ -10,7 +10,6 @@
   "scripts": {
     "test": "./node_modules/.bin/tap ./test/all.js",
     "cover": "istanbul cover --report none --print detail test/all.js",
-    "travis-test": "istanbul cover test/unit.js",
     "sanitycheck": "sanitycheck"
   },
   "contributors": [
