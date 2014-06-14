@@ -6,7 +6,7 @@ module.exports = {
             devel: true,
             debug: true,
             // websocket:false
-            info: {cookie_needed:false}
+            info: { cookie_needed: false }
         }
     },
 

@@ -3,6 +3,8 @@
 var test = require('tape');
 
 var u = require('../lib/helpers.js');
+var helpers = require('./lib/helpers.js');
+var config = require('./lib/config');
 
 test('random_string', function (t) {
     t.plan(5);
@@ -56,9 +58,7 @@ test('amendUrl', function (t) {
 });
 
 test('quote', function (t) {
-    var all_chars = new Array(65535).map(function (_, i) {
-        return String.fromCharCode(i);
-    }).join('');
+    var all_chars = helpers.allChars();
 
     t.plan(8);
 
@@ -174,4 +174,29 @@ test('safe json parse', function (t) {
     t.plan(2);
     t.equal(jsonParse('invalid json'), null);
     t.deepEqual(jsonParse('{"valid":"json"}'), {"valid":"json"});
+});
+
+test('SimpleEvent', function (t) {
+    var SimpleEvent = require('../lib/simpleevent.js');
+    t.plan(1);
+    t.equal(
+        '' + new SimpleEvent('simple', {
+            foo: 12,
+            bar: "string",
+            baz: function () {}
+        }),
+        'SimpleEvent(type=simple, foo=12, bar=string, baz=[function])'
+    );
+});
+
+test('protocols_whitelist', function (t) {
+    var s1 = helpers.newSockJS('/echo', []),
+        s2 = helpers.newSockJS('/echo', ['websocket']);
+
+    t.plan(2);
+    s1.onclose = s2.onclose = function () {
+        t.ok(true);
+    }
+    s1.close();
+    s2.close();
 });
