@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/tap ./test/all.js",
-    "cover": "istanbul cover --report none --print detail test/all.js",
+    "cover": "istanbul cover ./test/all.js --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "sanitycheck": "sanitycheck"
   },
   "contributors": [
@@ -44,6 +44,7 @@
     "sockjs": "^0.3.9",
     "tape": "^2.13.2",
     "tap": "^0.4.11",
-    "sanitycheck": "^0.1.1"
+    "sanitycheck": "^0.1.1",
+    "coveralls": "^2.10.0"
   }
 }
