@@ -8,8 +8,7 @@
     "url": "https://github.com/sockjs/sockjs-client/issues"
   },
   "scripts": {
-    "test": "./node_modules/.bin/tap ./test/all.js",
-    "cover": "istanbul cover ./test/all.js --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test": "istanbul cover ./test/all.js --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "sanitycheck": "sanitycheck"
   },
   "contributors": [
