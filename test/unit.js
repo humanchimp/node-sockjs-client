@@ -169,13 +169,6 @@ test('REventTarget', function (t) {
     r.removeEventListener('unknown', function () {});
 });
 
-test('safe json parse', function (t) {
-    var jsonParse = require('../lib/safe-json-parse.js');
-    t.plan(2);
-    t.equal(jsonParse('invalid json'), null);
-    t.deepEqual(jsonParse('{"valid":"json"}'), {"valid":"json"});
-});
-
 test('SimpleEvent', function (t) {
     var SimpleEvent = require('../lib/simpleevent.js');
     t.plan(1);
