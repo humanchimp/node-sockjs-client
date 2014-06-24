@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Marek Majkowski",
   "bugs": {
-    "url": "https://github.com/sockjs/sockjs-client/issues"
+    "url": "https://github.com/humanchimp/node-sockjs-client/issues"
   },
   "scripts": {
     "test": "./node_modules/.bin/istanbul cover ./test/all.js --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
